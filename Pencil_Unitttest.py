@@ -31,6 +31,7 @@ class TestPencilDurability(unittest.TestCase):
         # Writing spaces and newlines expends no graphite
         self.pencil.write(" ")
         self.assertEqual(self.pencil.getPointDurability(),(pointDurability),"point durability does not match spaces")
+    
     def testPointDegradationNewLine(self):
         pointDurability = self.pencil.getPointDurability()
         # Writing newlines expends no graphite
